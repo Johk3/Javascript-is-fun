@@ -5,7 +5,6 @@ function setup(){
     var height = window.innerHeight
 	|| document.documentElement.clientHeight
 	|| document.body.clientHeight;
-
 	createCanvas(width, height)
 }
 function draw(){
