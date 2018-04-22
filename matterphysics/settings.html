@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Settings</title>
+	<style type="text/css">
+		h1{
+			font-family: "Roboto"; 
+			font-size: 300%;
+		}
+		body{
+			color: white;
+			background: #2E2E2E;
+		}
+		.slider {
+		    -webkit-appearance: none;  /* Override default CSS styles */
+		    appearance: none;
+		    width: 100%; /* Full-width */
+		    height: 25px; /* Specified height */
+		    background: black; /* Grey background */
+		    outline: none; /* Remove outline */
+		    opacity: 0.5; /* Set transparency (for mouse-over effects on hover) */
+		    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+		    transition: opacity .2s;
+		}
+		.slider:hover {
+		    opacity: 1; /* Fully shown on mouse-over */
+		}
+		.slider::-webkit-slider-thumb {
+		    -webkit-appearance: none; /* Override default look */
+		    appearance: none;
+		    width: 25px; /* Set a specific slider handle width */
+		    height: 25px; /* Slider handle height */
+		    background: #4CAF50; /* Green background */
+		    cursor: pointer; /* Cursor on hover */
+		}
+
+		.slider::-moz-range-thumb {
+		    width: 25px; /* Set a specific slider handle width */
+		    height: 25px; /* Slider handle height */
+		    background: #4CAF50; /* Green background */
+		    cursor: pointer; /* Cursor on hover */
+		}
+	</style>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+</head>
+<body>
+<div class="slidecontainer">
+  <center><input type="range" min="1" max="100" value="50" class="slider" id="myRange"></center>
+  <h1>Friction:</h1>
+  <h1 id="kitka">0.5</h1>
+  <center><input type="range" min="1" max="100" value="50" class="slider" id="bounce"></center>
+  <h1>Restitution:</h1>
+  <h1 id="hyppy">0.5</h1>
+</div>
+<script type="text/javascript" src="settings.js"></script>
+<script type="text/javascript" src="box.js"></script>
+<center><a href="index.html"><button type="button" class="btn btn-primary btn-lg">Start</button></a><center>
+</body>
+</html>
